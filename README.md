@@ -9,7 +9,7 @@ This project visualises CO2 emissions per capita across multiple countries from 
   - `ggplot2` Creating the baseline plots.
   - `gganimate` Animates the plots 
   - `wbstats` Retrieves CO2 emissions data directly from the World Bank.
-  - `dplyr` `data manipulation and wrangling.
+  - `dplyr` data manipulation and wrangling.
   - `gifski` Renders the animation as a GIF.
   - `tidyverse` A collection of R packages for data science. (not essential for this project but handy)
 
@@ -26,16 +26,18 @@ The data used in this project is sourced from the World Bank via the `wbstats` p
 
 ## How to use
 - Customise the data
-  - **Countrie:s** Modify the countries vector to change the countries displayed in the animation.
-    `countries <- c("USA", "CHN", "DEU", "JPN", "IND", "GBR", "FRA", 
-  "BRA", "ITA", "CAN")`
+  - **Countries:** Modify the countries vector to change the countries displayed in the animation.
+   ```
+    countries <- c("USA", "CHN", "DEU", "JPN", "IND", "GBR", "FRA", "BRA", "ITA", "CAN")
+   ```
   - **Years:** Edit the start_date and end_date in the wb_data function to look at a different time period.
-    `data <- wb_data(indicator = "EN.ATM.CO2E.PC", start_date = 
-  1990, end_date = 2020)`
+   ```
+   data <- wb_data(indicator = "EN.ATM.CO2E.PC", start_date = 1990, end_date = 2020)
+   ```
   - **Indicators:** Change the indicator parameter in the wb_data function to analyse different environmental/economic indicators from the World Bank.
-    `data <- 
-  wb_data(indicator = "NY.GDP.PCAP.CD", start_date = 1990, end_date = 2020)  # Example for GDP per capita`
-
+   ```
+   data <- wb_data(indicator = "NY.GDP.PCAP.CD", start_date = 1990, end_date = 2020)  # Example for GDP per capita`
+   ```
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
