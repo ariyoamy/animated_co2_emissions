@@ -6,12 +6,12 @@ This project visualises CO2 emissions per capita across multiple countries from 
 ## Programs and Libraries Used
 - **R (with RStudio)**
 - **R Libraries:**
-  - `ggplot2` For creating the base line plots.
-  - `gganimate` For animating the plots to show changes over time.
-  - `wbstats` For retrieving CO2 emissions data directly from the World Bank.
-  - `dplyr` For data manipulation and wrangling.
-  - `gifski` For rendering the animation as a GIF.
-  - `tidyverse` A suite of R packages that includes `dplyr` and others for data science.
+  - `ggplot2` Creating the baseline plots.
+  - `gganimate` Animates the plots 
+  - `wbstats` Retrieves CO2 emissions data directly from the World Bank.
+  - `dplyr` `data manipulation and wrangling.
+  - `gifski` Renders the animation as a GIF.
+  - `tidyverse` A collection of R packages for data science. (not essential for this project but handy)
 
 ## Data Sources
 The data used in this project is sourced from the World Bank via the `wbstats` package. But you can also access the data manually [here](https://data.worldbank.org/).
@@ -24,7 +24,19 @@ The data used in this project is sourced from the World Bank via the `wbstats` p
    install.packages(c("ggplot2", "gganimate", "wbstats", "dplyr", "gifski", "tidyverse"))
    ```
 
-## Customise the data
-- **Countrie:s** Modify the countries vector to change the countries displayed in the animation. `countries <- c("USA", "CHN", "DEU", "JPN", "IND", "GBR", "FRA", "BRA", "ITA", "CAN")`
-- **Years:** Edit the start_date and end_date in the wb_data function to look at a different time period.  `data <- wb_data(indicator = "EN.ATM.CO2E.PC", start_date = 1990, end_date = 2020)`
-- **Indicators:** Change the indicator parameter in the wb_data function to analyse different environmental/economic indicators from the World Bank. `data <- wb_data(indicator = "NY.GDP.PCAP.CD", start_date = 1990, end_date = 2020)  # Example for GDP per capita`
+## How to use
+- Customise the data
+  - **Countrie:s** Modify the countries vector to change the countries displayed in the animation. `countries <- c("USA", "CHN", "DEU", "JPN", "IND", "GBR", "FRA", 
+  "BRA", "ITA", "CAN")`
+  - **Years:** Edit the start_date and end_date in the wb_data function to look at a different time period.  `data <- wb_data(indicator = "EN.ATM.CO2E.PC", start_date = 
+  1990, end_date = 2020)`
+  - **Indicators:** Change the indicator parameter in the wb_data function to analyse different environmental/economic indicators from the World Bank. `data <- 
+  wb_data(indicator = "NY.GDP.PCAP.CD", start_date = 1990, end_date = 2020)  # Example for GDP per capita`
+
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Contact
+Any feedback is welcome and encouraged!
+- **GitHub:** @ariyoamy
