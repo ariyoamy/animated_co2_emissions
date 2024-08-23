@@ -1,7 +1,7 @@
 # Animated CO2 Emissions Over Time
 
 ## Description
-This project visualises CO2 emissions per capita across multiple countries from 1990 to 2020 using R. The animation helps to track and compare how different countries have contributed to global CO2 emissions over time. The project uses data from the World Bank, and it aims to give insights into environmental changes.
+This code visualises CO2 emissions per capita across multiple countries from 1990 to 2020 using R. The animation helps to track and compare how different countries have contributed to global CO2 emissions over time. 
 
 ![Animated CO2 Emissions](animated_co2_emissions.gif)
 
@@ -20,7 +20,7 @@ The data used in this project is sourced from the World Bank via the `wbstats` p
 
 ## Installation
 1. **Install R:** Make sure you have R installed. You can download it from [CRAN](https://cran.r-project.org/).
-2. **Install RStudio:** (Optional but recommended) Download [RStudio](https://rstudio.com/products/rstudio/download/) 
+2. **Install RStudio:** Download [RStudio](https://rstudio.com/products/rstudio/download/) 
 3. **Install the required R packages:**
    ```
    install.packages(c("ggplot2", "gganimate", "wbstats", "dplyr", "gifski", "tidyverse"))
